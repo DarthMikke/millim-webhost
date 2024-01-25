@@ -1,20 +1,21 @@
-# millim-dev
+# Millim webhost
 
 ## What is it?
-What started as a development container environment for my web server,
-became a production container for my web server.
+HTTPD configuration serving as a file server, Python web app server and
+reverse proxy.
 
-## Why?
-It's a simple way of ensuring that dependencies and environments are the same
-in both live and development environments, especially Apache setup
-and Python version.
+## Installed mods
+- Proxy & reverse proxy
+- WSGI
+- SSL
+- Rewrite
 
 ## File structure
 
 Defined in code:
 - `/srv/portfolio`: served directory
 - `/srv/config`: HTTPD config files
-- `/ssh`: Place for Github private key
+- `/ssh`: Place for SSH configuration
 
 `/srv` and `/ssh` are marked as volumes in Dockerfile.
 
