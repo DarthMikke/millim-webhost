@@ -4,6 +4,11 @@
 HTTPD configuration serving as a file server, Python web app server and
 reverse proxy.
 
+## Versioned environment
+Both the configuration directory and hosted directory can be versioned. Pass 
+the git repo addresses and branches as environment variables, as described in 
+`stack.sample.env`.
+
 ## Installed mods
 - Proxy & reverse proxy
 - WSGI
