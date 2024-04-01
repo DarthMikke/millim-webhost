@@ -18,7 +18,8 @@ def locate_setup(project_path):
     for fn in filenames:
         flattened += fn
     filenames = [x for x in flattened
-                 if os.path.isfile(x)]
+                 if os.path.isfile(x) and \
+                    os.access(x, os.X_OK)]
     if len(filenames) > 0:
         return filenames[0]
 
